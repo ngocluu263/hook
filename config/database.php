@@ -2,9 +2,7 @@
 
 return array(
     // Database URI
-    'uri' => getenv('CLEARDB_DATABASE_URL')
-        // use sqlite as default
-        ?: 'sqlite://../../shared/database.sqlite?prefix=',
+    //'uri' => getenv('CLEARDB_DATABASE_URL')?: 'sqlite://../../shared/database.sqlite?prefix=',
 
     // // SQLite
     // // -------
@@ -33,11 +31,11 @@ return array(
 
     // // MongoDB
     // // -------
-    // 'driver'   => 'mongodb',
-    // 'host'     => 'localhost',
-    // 'port'     => 27017,
+    'driver'   => 'mongodb',
+    'host'     => 'localhost',
+    'port'     => 27017,
     // // 'username' => 'username',
     // // 'password' => 'password',
-    // 'database' => 'hook'
+    'database' => 'hook'
 
 );
